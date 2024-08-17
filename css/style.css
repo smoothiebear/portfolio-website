@@ -1,3 +1,18 @@
-body{
+/*
+Colors used:
+Primary Color (dark green): #243E36;
+Primary Color (medium green):7CA982;
+Primary Color (light green) F1F7ED
+Secondary Color (dark blue): #29339B;
+Secondary Color (medium blue):016FB9
+*/
+
+body {
+
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
     background-color: #F1F7ED;
+
 }
