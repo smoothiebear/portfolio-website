@@ -15,28 +15,68 @@ body {
     font-size: 16px;
     line-height: 1.6;
 
-h1, h2, h3, h4 {
-  line-height: 1.4;
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1.4;
+    }
+
+    h1 {
+        font-size: 2.75em;
+        font-weight: 700;
+        color: #243E36;
+    }
+
+    h2 {
+        font-size: 2.25em;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.75em;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 1.35em;
+        font-weight: 400;
+    }
+
+    a {
+        color: #243E36;
+        text-decoration: none;
+    }
+
+    a:hover {
+        a:focus {
+            color: #016FB9;
+            text-decoration: underline;
+        }
+    }
+
+    a:visited {
+        color: #7CA982;
+    }
+
+    a:active {
+        color: #29339B;
+    }
+
+    img {
+        width: 100%;
+    }
+.button{
+    display: inline-block;
+    background-color: #7CA982;
+    color: #ffffff; 
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
 }
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-  color:#243E36;
+.button:hover {
+    opacity: 0.8; 
+    text-decoration: none;
 }
 
-h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-}
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-}
-
-    
 }
