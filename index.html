@@ -10,35 +10,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- header-->
-<div>
-    <header>
-    <img src="https://via.placeholder.com/150x50?text=Logo" alt="Jess A Logo" >
-    <nav>
-     <a href="#projects">Work</a>
-     <a href="about.html">About</a>
-     <a href="#footer">Contact</a>
-    </nav>
-    </header>
-<div> 
+<header>
+    <div>
+        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Jess A Logo">
+        <nav class="navigation">
+            <a href="#projects">Work</a>
+            <a href="about.html">About</a>
+            <a href="#footer">Contact</a>
+        </nav>
+    </div>
+</header>
+
     <hero>
-        <div>
+        <div class="container">
             <h2>Hi, my name is Jess Amador</h2>
             <span>I’m a former educator and current UX/UI designer. </span>
         </div>
     </hero>
-</div>
-</div>
+
 
 <!--main-->
 <!--work/projects-->
 <div id="projects">
     <work>
-        <div> 
+        <div class="container"> 
             <h2>My Works</h2> 
         </div>
-        <div>
+        <div >
             <article title="Project One">
                 <h4>TradePost</h4>
                 <div>
@@ -71,18 +72,19 @@
 
 <!--footer-->
 <footer id="footer">
-    <div>
-        <h1>Contact Me</h1>
-        <p>Interested in my work and want to get in touch? Contact me through the links below</p>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Interested in my work and want to get in touch?</p>
+            <p>Contact me through the links below</p>
     </div>
-    <div>
+    <span id="contactlinks">
         <a href="mailto:amador.jessica98@gmail.com">
-            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="8-Email" id="_8-Email"><path d="M45,7H3a3,3,0,0,0-3,3V38a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V10A3,3,0,0,0,45,7Zm-.64,2L24,24.74,3.64,9ZM2,37.59V10.26L17.41,22.17ZM3.41,39,19,23.41l4.38,3.39a1,1,0,0,0,1.22,0L29,23.41,44.59,39ZM46,37.59,30.59,22.17,46,10.26Z"/></g></svg>
+            <img src="img/mailsvg.svg" alt="email icon">
         </a>
         <a href="https://www.linkedin.com/in/jessica-amador-9053a8101/" target="_blank">
-            <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>
+            <img src="img/linkedinsvg.svg" alt="linkedin icon">
         </a>
-    </div>
+    </span>
     <div>
         <p>Copyright Jessica Amador 2024</p>
     </div>

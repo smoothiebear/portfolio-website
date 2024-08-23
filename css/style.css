@@ -6,7 +6,15 @@ Primary Color (light green) F1F7ED
 Secondary Color (dark blue): #29339B;
 Secondary Color (medium blue):016FB9
 */
+.container {
+    padding: 0 15px;
+  }
 
+header {
+    background-color: #243E36;
+    padding: 10px;
+    
+  }
 body {
     background-color: #F1F7ED;
     font-family: "Questrial", sans-serif;
@@ -14,13 +22,6 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 1.6;
-
-    h1,
-    h2,
-    h3,
-    h4 {
-        line-height: 1.4;
-    }
 
     h1 {
         font-size: 2.75em;
@@ -63,20 +64,29 @@ body {
         color: #29339B;
     }
 
+
+    .button {
+        display: inline-block;
+        background-color: #7CA982;
+        color: #ffffff;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    .button:hover {
+        opacity: 0.8;
+        text-decoration: none;
+    }
+
+}
+
+footer{
     img {
         width: 100%;
-    }
-.button{
-    display: inline-block;
-    background-color: #7CA982;
-    color: #ffffff; 
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-}
-.button:hover {
-    opacity: 0.8; 
-    text-decoration: none;
-}
+      }
+  contactlinks{
+    width: 20%;
+  }
 
 }
