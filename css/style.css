@@ -6,15 +6,25 @@ Primary Color (light green) F1F7ED
 Secondary Color (dark blue): #29339B;
 Secondary Color (medium blue):016FB9
 */
+* {
+    box-sizing: border-box;
+  }
+
 .container {
     padding: 0 15px;
+}
+.row {
+    margin: 25px 0;
+    padding: 0 0 25px 0;
+    border-bottom: 3px solid #7CA982;
   }
 
 header {
     background-color: #243E36;
-    padding: 10px;
-    
-  }
+    padding: 0 10px;
+
+}
+
 body {
     background-color: #F1F7ED;
     font-family: "Questrial", sans-serif;
@@ -22,6 +32,11 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 1.6;
+
+    img{
+        width: 100%;
+        padding: 15px;
+    }
 
     h1 {
         font-size: 2.75em;
@@ -57,7 +72,7 @@ body {
     }
 
     a:visited {
-        color: #7CA982;
+        color: #016FB9
     }
 
     a:active {
@@ -78,15 +93,18 @@ body {
         opacity: 0.8;
         text-decoration: none;
     }
-
+    #hero h2 {
+        text-align: center; /* Centers text */
+      }
 }
 
-footer{
+footer {
     img {
         width: 100%;
-      }
-  contactlinks{
-    width: 20%;
-  }
+        margin: 0 auto;
+    }
+    #contactlinks {
+        width:15%;
+    }
 
 }

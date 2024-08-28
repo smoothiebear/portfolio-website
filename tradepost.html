@@ -13,14 +13,18 @@
 </head>
 <!--body-->
  <!-- header-->
-
  <header>
-    <img src="https://via.placeholder.com/150x50?text=Logo" alt="Jess A Logo">
-    <nav>
-        <a href="index.html#projects">Work</a>
-        <a href="index.html">Home</a>
-        <a href="#footer">Contact</a>
-    </nav>
+    <div>
+        <picture class="logo">
+            <source srcset="/img/jessamalogo1x.jpg" media="(max-width767px)">
+            <img src="img/jessamalogo1x.jpg" alt="Jess A Logo">
+        </picture>
+        <nav class="navigation">
+            <a href="#projects">Work</a>
+            <a href="about.html">About</a>
+            <a href="#footer">Contact</a>
+        </nav>
+    </div>
 </header>
 <body id="body">
 <div>
@@ -45,19 +49,20 @@
 </body>
 <!--footer-->
 <footer id="footer">
-    <div>
-        <h1>Contact Me</h1>
-        <p>Interested in my work and want to get in touch? Contact me through the links below</p>
-    </div>
     <div class="container">
+        <h2>Contact Me</h2>
+        <p>Interested in my work and want to get in touch?</p>
+            <p>Contact me through the links below</p>
+    </div>
+    <div id="contactlinks" class="container">
         <a href="mailto:amador.jessica98@gmail.com">
-            <img src="http://via.placeholder.com/32x32">
+            <img src="img/mailsvg.svg" alt="email icon">
         </a>
         <a href="https://www.linkedin.com/in/jessica-amador-9053a8101/" target="_blank">
-            <img src="http://via.placeholder.com/32x32">
+            <img src="img/linkedinsvg.svg" alt="linkedin icon">
         </a>
     </div>
-    <div>
+    <div class="container">
         <p>Copyright Jessica Amador 2024</p>
     </div>
 </footer>

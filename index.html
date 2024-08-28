@@ -14,8 +14,11 @@
 <body>
     <!-- header-->
 <header>
-    <div class="container">
-        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Jess A Logo">
+    <div>
+        <picture class="logo">
+            <source srcset="/img/jessamalogo1x.jpg" media="(max-width767px)">
+            <img src="img/jessamalogo1x.jpg" alt="Jess A Logo">
+        </picture>
         <nav class="navigation">
             <a href="#projects">Work</a>
             <a href="about.html">About</a>
@@ -24,7 +27,7 @@
     </div>
 </header>
 
-    <hero>
+    <hero id="hero">
         <div class="container">
             <h2>Hi, my name is Jess Amador</h2>
             <span>I’m a former educator and current UX/UI designer. </span>
@@ -39,7 +42,7 @@
         <div> 
             <h2>My Works</h2> 
         </div>
-        <div >
+        <div class="row">
             <article title="Project One">
                 <h4>TradePost</h4>
                 <div>
@@ -77,15 +80,15 @@
         <p>Interested in my work and want to get in touch?</p>
             <p>Contact me through the links below</p>
     </div>
-    <span id="contactlinks" class="container">
+    <div id="contactlinks" class="container">
         <a href="mailto:amador.jessica98@gmail.com">
             <img src="img/mailsvg.svg" alt="email icon">
         </a>
         <a href="https://www.linkedin.com/in/jessica-amador-9053a8101/" target="_blank">
             <img src="img/linkedinsvg.svg" alt="linkedin icon">
         </a>
-    </span>
-    <div>
+    </div>
+    <div class="container">
         <p>Copyright Jessica Amador 2024</p>
     </div>
 </footer>
