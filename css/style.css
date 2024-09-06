@@ -6,17 +6,19 @@ Primary Color (light green) F1F7ED
 Secondary Color (dark blue): #29339B;
 Secondary Color (medium blue):016FB9
 */
+
 * {
     box-sizing: border-box;
 }
 
 .container {
     padding: 0px 15px;
+    max-width: 1200px;
 }
 
 .row {
     margin: 25px 0;
-    padding: 0 0 25px 0;
+    padding: 0 0 15px 0;
     border-bottom: 3px solid #7CA982;
 }
 
@@ -34,6 +36,7 @@ header {
             text-transform: uppercase;
             font-weight: 700;
             color: #F1F7ED;
+            width: 100%;
 
             a:visited {
                 color: #016FB9;
