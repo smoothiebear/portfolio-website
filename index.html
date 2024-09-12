@@ -1,80 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jess Amador UX/UI</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
-    <!-- header-->
-    <header>
-        <div>
-            <a href="index.html" alt="return to home" id="logo" class="logo">
-                <source srcset="/img/jessamalogo1x.jpg" media="(max-width767px)">
-                <img src="img/jessamalogo2x.jpg" alt="Jess A Logo">
+<!-- header-->
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html" alt="return to home">
+                <img src="img/jessamalogo.svg" alt="jess a logo">
             </a>
-            <nav class="navigation">
-                <u1>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
                     <li> <a href="index.html#work">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#footer">Contact</a></li>
-                </u1>
+                </ul>
             </nav>
         </div>
-    </header>
-<!--main-->
-<main>
-    <hero id="hero">
-        <div class="container">
-            <h1>Welcome!</h1>
-            <span>My name is Jess Amador and I’m a former educator and current UX/UI designer. </span>
-        </div>
-    </hero>
+    </div>
+</header>
+
+<body>
+    <!--main-->
+    <main>
+        <hero id="hero">
+            <div class="container">
+                <h1>Welcome!</h1>
+                <span>My name is Jess Amador and I’m a former educator and current UX/UI designer. </span>
+            </div>
+        </hero>
 
 
-<!--work/projects-->
-<div id="work" class="container">
-    <work>
-        <div> 
-            <h2>My Works</h2> 
-        </div>
-        <div class="row">
-            <article title="Project One">
-                <h3>TradePost</h3>
-                <div>
-                    <p>TradePost is a native app intended for both iOS and Android. This project features screens, mock-ups, and
-                        other UI elements created to showcase the potential of a community-centered mercantile application.</p>
-                    <a href="tradepost.html" class="button">view project</a>
-                </div>
-                <picture>
-                    <source srcset="/img/tradepostcover1x.jpg" media="(max-width767px)">
-                    <img src="img/tradepostcover2x.jpg" alt="TradePost UX/UI Case Study Cover">
-                </picture>
-            </article>
-
-            <article title="Project Two">
-                <h3>Casual Cooks</h3>
-                <div>
-                    <p>Casual Cooks is a responsive recipe app. Designed to evoke a sense of warmth and simplicity, Casual Cooks
-                        aims to provide the average person a space to explore quick, cheap, and no-frills recipes.</p>
-                    <a href="casualcooks.html" class="button">view project</a>
+        <!--work/projects-->
+        <div id="work" class="container">
+            <div>
+                <h2>My Works</h2>
+            </div>
+            <div>
+                <article id="workone" class="row">
+                    <div class="col-md-6 col-lg-8"  >
+                        <picture>
+                            <source srcset="/img/tradepostcover1x.jpg" media="(max-width767px)">
+                            <img src="img/tradepostcover2x.jpg" alt="TradePost UX/UI Case Study Cover">
+                        </picture>
+                        <div class="col-md-6 col-lg-8">
+                            <h3>TradePost</h3>
+                            <p>TradePost is a native app intended for both iOS and Android. This project features
+                                screens, mock-ups, and
+                                other UI elements created to showcase the potential of a community-centered
+                                mercantile
+                                application.</p>
+                            <a href="tradepost.html" class="button">view project</a>
+                        </div>
                     </div>
-                    <picture>
-                        <source srcset="img/casualcookscover1x.jpg" media="(max-width767px)">
-                        <img src="img/casualcookscover2x.jpg" alt="TradePost UX/UI Case Study Cover">
-                    </picture>
-            </article>
+                </article>
+
+                <article id="worktwo" class="row">
+                    <div class="col-md-6 col-lg-8">
+                        <picture>
+                            <source srcset="img/casualcookscover1x.jpg" media="(max-width767px)">
+                            <img src="img/casualcookscover2x.jpg" alt="TradePost UX/UI Case Study Cover">
+                        </picture>
+                        <div class="col-md-6 col-lg-8" >
+                            <h3>Casual Cooks</h3>
+                            <p>Casual Cooks is a responsive recipe app. Designed to evoke a sense of warmth and
+                                simplicity, Casual Cooks
+                                aims to provide the average person a space to explore quick, cheap, and no-frills
+                                recipes.</p>
+                            <a href="casualcooks.html" class="button">view project</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
-    </work>
-</div>
-</main>
+    </main>
 </body>
 
 <!--footer-->
@@ -82,15 +95,19 @@
     <div class="container">
         <h1>Contact Me</h1>
         <p>Interested in my work and want to get in touch?</p>
-            <p>Contact me through the links below</p>
+        <p>Contact me through the links below</p>
     </div>
-    <div id="contactlinks" class="container">
-        <a href="mailto:amador.jessica98@gmail.com">
-            <img src="img/mailsvg.svg" alt="email icon">
-        </a>
-        <a href="https://www.linkedin.com/in/jessica-amador-9053a8101/" target="_blank">
-            <img src="img/linkedinsvg.svg" alt="linkedin icon">
-        </a>
+    <div id="contact">
+        <div class="contactlinks">
+            <a href="mailto:amador.jessica98@gmail.com">
+                <img src="img/mailsvg.svg" alt="email icon">
+            </a>
+        </div>
+        <div class="contactlinks">
+            <a href="https://www.linkedin.com/in/jessica-amador-9053a8101/" target="_blank">
+                <img src="img/linkedinsvg.svg" alt="linkedin icon">
+            </a>
+        </div>
     </div>
     <div class="container">
         <p>Copyright Jessica Amador 2024</p>
