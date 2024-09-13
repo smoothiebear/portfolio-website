@@ -21,13 +21,12 @@ Secondary Color (medium blue):016FB9
     padding: 0 0 15px 0;
     display: block;
     border-bottom: 3px solid #7CA982;
-
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
 }
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .center {
     text-align: center;
@@ -71,12 +70,12 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    line-height: 1.6;
 
     h1 {
         font-size: 2.75em;
         font-weight: 700;
         color: #243E36;
+        text-align: center;
     }
 
     h2 {
@@ -88,11 +87,17 @@ body {
     h3 {
         font-size: 1.75em;
         font-weight: 600;
+        padding: 5px auto 0px auto;
     }
 
     h4 {
         font-size: 1.35em;
         font-weight: 400;
+        line-height: 1.4;
+    }
+
+    p{
+        margin: 0px auto 15px auto;
     }
     
     img {
@@ -113,11 +118,11 @@ body {
     }
 
     a:visited {
-        color: #016FB9
+        color:#F1F7ED
     }
 
     a:active {
-        color: #29339B;
+        color: #7CA982;
     }
 
     .button {
@@ -127,6 +132,8 @@ body {
         font-weight: 400;
         padding: 10px;
         border-radius: 3px;
+        transition-duration: 0.2s;
+        transition-property: opacity;
     }
 
     .button:hover {
@@ -161,8 +168,8 @@ footer {
         padding: 0px 15px
     }
   .contactlinks {
-       display: inline-block;
        max-width: 100px;
+       margin: 0 auto;
     
   }
 
@@ -190,11 +197,16 @@ Medium devices (640px and larger)
     main{
         padding-top: 135px;
     }
-
-
+    #about h2 { 
+        margin: 0;
+    }  
+    #about h3 { 
+        margin: 0;
+    }  
     [class*="col-"] {
         width: 50%;
         float: left;
+        padding: 10px;
       }
     
       
@@ -206,5 +218,55 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 50px
+      }
+
+    header {
+        text-align: unset;
+        padding: 10px 0 13px;
+    }
+    .logo{
+        margin: 0px 0px;
+        float: left;
+    }
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 40px;
+    }
+
+    body{
+    main{
+        padding-top: 135px;
+    }
+    #about h2 { 
+        margin: 0;
+    }  
+    #about {
+        .row{
+            border-bottom: 0px;
+        }
+        h3 { 
+            margin: 0;
+        } 
+        .col-lg-5 {
+            padding-left: 50px;
+        }
+    }
+    
+    [class*="col-"] {
+        width: 50%;
+        float: left;
+        padding: 10px;
+
+
+      }
+    
+    
+}
 }
 
