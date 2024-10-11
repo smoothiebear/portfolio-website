@@ -12,27 +12,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23bca0c1ec.js" crossorigin="anonymous"></script>
+
 
 </head>
 <!-- header-->
 <header>
     <div class="container">
-        <div class="logo">
-            <a href="index.html" alt="return to home">
-                <img src="img/jessamalogo.svg" alt="jess a logo">
-            </a>
-        </div>
-        <div class="nav">
-            <nav>
-                <ul>
-                    <li> <a href="index.html#work">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="navtoggle" id="myNavtoggle">
+            <div class="logo">
+                <a href="index.html" alt="return to home">
+                    <img src="img/jessamalogo.svg" alt="jess a logo">
+                </a>
+            </div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li> <a href="index.html#work">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 </header>
+
 <!--body-->
 <body id="body">
     <main>
@@ -58,6 +65,10 @@
             </div>
         </div>
     </main>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 <!--footer-->

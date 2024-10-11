@@ -27,30 +27,41 @@ Secondary Color (medium blue):016FB9
     clear: both;
     display: table;
   }
-
-.center {
+  .center {
     text-align: center;
   }
-
 header {
     background-color: #243E36;
     position:fixed;
     width: 100%;
-    padding: 10px 0px;
-    text-align: center;
-
+    padding: 10px 0 4px;
 }
     .logo{
         max-width: 250px;
-        margin:auto
     }
-
+    .navtoggle li:not(:last-child) {
+        display: none;
+      }
+      .navtoggle, .navtoggle.responsive {
+        position: relative;
+      }
+      .navtoggle li .icon {
+        position: absolute;
+        right: 0;
+        top: 40px;
+        font-size: 24px;
+        padding-right: 0;
+      }
+      .navtoggle.responsive li  {
+        display: block;
+      }
     nav {
-        ul{
+         ul{
             list-style-type: none;
+            text-align: left;
             padding: 0;
+            margin: 0;
             li{
-                display: inline-block;
                 a{
                     padding: 0 15px;
                     text-transform: uppercase;
@@ -142,7 +153,7 @@ body {
 
 /*layout styling*/
     main{
-        padding-top: 195px;
+        padding-top: 125px;
 
      /*hero*/
         #hero {
@@ -238,6 +249,7 @@ Medium devices (640px and larger)
     }
     .logo{
         margin: 0px 0px;
+        max-width: 250px;
         float: left;
     }
     nav {
@@ -245,7 +257,18 @@ Medium devices (640px and larger)
       float: right;
       margin-top: 40px;
     }
-
+    nav > ul > li {
+        display: inline-block;
+      }
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+      .navtoggle li:last-child {
+        display: none;
+      }
+      nav > ul {
+        margin: 1em 0;
+      }
     body{
     main{
         padding-top: 135px;
@@ -292,11 +315,17 @@ Large devices (1024px or larger)
         margin: 0px 0px;
         float: left;
     }
+    nav > ul > li {
+        display: inline-block;
+      }
     nav {
       width: auto;
       float: right;
       margin-top: 40px;
     }
+    nav > ul {
+        margin: 1em 0;
+      }
 
     body{
     main{
