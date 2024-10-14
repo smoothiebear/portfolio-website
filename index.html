@@ -15,11 +15,12 @@
 </head>
 
 <!-- header-->
+<body>
 <header>
     <div class="container">
         <div class="navtoggle" id="myNavtoggle">
             <div class="logo">
-                <a href="index.html" alt="return to home">
+                <a href="index.html">
                     <img src="img/jessamalogo.svg" alt="jess a logo">
                 </a>
             </div>
@@ -28,7 +29,7 @@
                     <ul>
                         <li> <a href="index.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#footer" onclick="menuToggle()">Contact</a> </li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a> </li>
                         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
                                     class="fas fa-bars"></i></a></li>
                     </ul>
@@ -38,15 +39,15 @@
     </div>
 </header>
 
-<body>
+
     <!--main-->
     <main>
-        <hero id="hero">
+        <div id="hero">
             <div class="container">
                 <h1>Welcome!</h1>
                 <span>My name is Jess Amador and I’m a former educator and current UX/UI designer. </span>
             </div>
-        </hero>
+        </div>
 
 
         <!--work/projects-->
@@ -93,7 +94,6 @@
                 </article>
                 <article id="work3" class="row">
                     <div class="col-md-6 col-lg-7">
-                        <picture class="animation">
                             <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="100%" width="100%" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <defs>
                                     <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
@@ -693,7 +693,7 @@
                                     <path fill="#1A232C" d="M55.253 470.489L55.253 410.403C55.253 409.85 54.805 409.403 54.253 409.403 53.701 409.403 53.253 409.85 53.253 410.403L53.253 470.489C53.253 471.041 53.701 471.489 54.253 471.489 54.805 471.489 55.253 471.041 55.253 470.489M50.889 340.95L65.312 340.95C65.865 340.95 66.312 340.502 66.312 339.95 66.312 339.397 65.865 338.95 65.312 338.95L50.889 338.95C50.336 338.95 49.889 339.397 49.889 339.95 49.889 340.502 50.336 340.95 50.889 340.95"></path>
                                 </g>
                             </svg>
-                        </picture>
+                
                     </div>
                     <div class="col-md-6 col-lg-5">
                         <h3>CSS Animation</h3>
@@ -708,30 +708,31 @@
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+
+    <footer id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Interested in my work and want to get in touch?</p>
+            <p>Contact me through the links below</p>
+        </div>
+        <div id="contactlinks">
+            <div class="contactlinks">
+                <a href="mailto:amador.jessica98@gmail.com">
+                    <img src="img/mailsvg.svg" alt="email icon">
+                </a>
+            </div>
+            <div class="contactlinks">
+                <a href="https://www.linkedin.com/in/jessica-amador-9053a8101/" target="_blank">
+                    <img src="img/linkedinsvg.svg" alt="linkedin icon">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <p>Copyright Jessica Amador 2024</p>
+        </div>
+    </footer>
 </body>
 
-<!--footer-->
-<footer id="footer">
-    <div class="container">
-        <h1>Contact Me</h1>
-        <p>Interested in my work and want to get in touch?</p>
-        <p>Contact me through the links below</p>
-    </div>
-    <div id="contact">
-        <div class="contactlinks">
-            <a href="mailto:amador.jessica98@gmail.com">
-                <img src="img/mailsvg.svg" alt="email icon">
-            </a>
-        </div>
-        <div class="contactlinks">
-            <a href="https://www.linkedin.com/in/jessica-amador-9053a8101/" target="_blank">
-                <img src="img/linkedinsvg.svg" alt="linkedin icon">
-            </a>
-        </div>
-    </div>
-    <div class="container">
-        <p>Copyright Jessica Amador 2024</p>
-    </div>
-</footer>
+
 
 </html>
