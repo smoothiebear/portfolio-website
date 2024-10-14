@@ -1,124 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jess Amador UX/UI</title>
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/23bca0c1ec.js" crossorigin="anonymous"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jess Amador About</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/23bca0c1ec.js" crossorigin="anonymous"></script>
-
-
-</head>
-
-<!-- header-->
-<header>
-    <div class="container">
+  <!-- header-->
+  <body>
+    <header>
+      <div class="container">
         <div class="navtoggle" id="myNavtoggle">
-            <div class="logo">
-                <a href="index.html" alt="return to home">
-                    <img src="img/jessamalogo.svg" alt="jess a logo">
-                </a>
-            </div>
-            <div class="nav">
-                <nav>
-                    <ul>
-                        <li> <a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fas fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+          <div class="logo">
+            <a href="index.html">
+                <img src="img/jessamalogo.svg" alt="jess a logo">
+            </a>
+          </div>
+          <div class="nav">
+            <nav>
+              <ul>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-    </div>
-</header>
-
-
-<body>
+      </div>
+    </header>
 
     <!--main-->
     <div id="about">
-        <main>
-            <div class="container">
-                <h1>About</h1>
-                <div class="row">
-                    <div class="col-sm-5 col-lg-5" id="headshot">
-                        <img srcset="/img/headshot1.jpg" alt="Jess Amador headshot image" media="max-width 767px">
-                    </div>
-
-                    <div>
-                        <section class="col-md-6 col-lg-7">
-                            <h2>My Story</h2>
-                            <p>Born and raised in Orlando, Florida I have always had a passion for creative pursuits.
-                                From illustration to crochet, I’ve never shied away from trying a new art form. After
-                                discovering my similar passion for education, I graduated from Florida State University
-                                with a degree in Curriculum and Instruction. </p>
-                            <p>Now, I look forward into delving into the worlds of educational design and educational
-                                technology with my knowledge of UX and UI.</p>
-                            <a href="/files/jessamaresume.pdf" target="_blank" class="button">Download my resume</a>
-                        </section>
-                    </div>
-                    <section class="col-lg-7">
-                        <h2>Skills and tools</h2>
-                        <div class=" ">
-                            <h3>Relevant skills</h3>
-                            <u1>
-                                <li>UX/UI</li>
-                                <li>Frontend</li>
-                                <li>Customer support</li>
-                                <li>public speaking</li>
-                            </u1>
-                        </div>
-                        <div class=" ">
-                            <h3>Tools</h3>
-                            <li>Figma</li>
-                            <li>Procreate</li>
-                            <li>Photoshop</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>JavaScript</li>
-
-                        </div>
-                    </section>
-                </div>
+      <main>
+        <div class="container">
+          <h1>About</h1>
+          <div class="row">
+            <div class="col-sm-5 col-lg-5" id="headshot">
+                <picture>
+                    <source srcset="/img/headshot1.jpg" media="(max-width767px)">
+                    <img src="img/headshot2.jpg" alt="Jess Amador Headshot">
+                </picture>
             </div>
-        </main>
+
+            <div>
+              <section class="col-md-6 col-lg-7">
+                <h2>My Story</h2>
+                <p>
+                  Born and raised in Orlando, Florida I have always had a
+                  passion for creative pursuits. From illustration to crochet,
+                  I’ve never shied away from trying a new art form. After
+                  discovering my similar passion for education, I graduated from
+                  Florida State University with a degree in Curriculum and
+                  Instruction.
+                </p>
+                <p>
+                  Now, I look forward into delving into the worlds of
+                  educational design and educational technology with my
+                  knowledge of UX and UI.
+                </p>
+                <a
+                  href="/files/jessamaresume.pdf"
+                  target="_blank"
+                  class="button"
+                  >Download my resume</a
+                >
+              </section>
+            </div>
+            <section class="col-lg-7">
+              <h2>Skills and tools</h2>
+              <div class=" ">
+                <h3>Relevant skills</h3>
+                <ul>
+                  <li>UX/UI</li>
+                  <li>Frontend</li>
+                  <li>Customer support</li>
+                  <li>Public speaking</li>
+                </ul>
+              </div>
+              <div class=" ">
+                <h3>Tools</h3>
+                <ul>
+                  <li>Figma</li>
+                  <li>Procreate</li>
+                  <li>Photoshop</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
-</body>
-<!--footer-->
-<footer id="footer">
-    <div class="container">
-        <h1>Contact Me</h1>
-        <p>Interested in my work and want to get in touch?</p>
-        <p>Contact me through the links below</p>
-    </div>
-    <div id="contact">
-        <div class="contactlinks">
-            <a href="mailto:amador.jessica98@gmail.com">
-                <img src="img/mailsvg.svg" alt="email icon">
-            </a>
+
+    <footer id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Interested in my work and want to get in touch?</p>
+            <p>Contact me through the links below</p>
         </div>
-        <div class="contactlinks">
-            <a href="https://www.linkedin.com/in/jessica-amador-9053a8101/" target="_blank">
-                <img src="img/linkedinsvg.svg" alt="linkedin icon">
-            </a>
+        <div id="contactlinks">
+            <div class="contactlinks">
+                <a href="mailto:amador.jessica98@gmail.com">
+                    <img src="img/mailsvg.svg" alt="email icon">
+                </a>
+            </div>
+            <div class="contactlinks">
+                <a href="https://www.linkedin.com/in/jessica-amador-9053a8101/" target="_blank">
+                    <img src="img/linkedinsvg.svg" alt="linkedin icon">
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <p>Copyright Jessica Amador 2024</p>
-    </div>
-</footer>
-
-
-
+        <div class="container">
+            <p>Copyright Jessica Amador 2024</p>
+        </div>
+    </footer>
+  </body>
 </html>
